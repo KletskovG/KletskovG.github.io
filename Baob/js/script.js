@@ -1,4 +1,14 @@
 window.onload = function () {
+    // ---------
+    // MENU
+    // --------
+    let Toggle     = document.querySelector('.toggle');
+    let Menu       = document.querySelector('.menu');
+    Toggle.addEventListener('click', function () {
+        this.classList.toggle('toggle-hidden');
+        Menu.classList.toggle('menu-hidden');
+    })
+
     // -------
     // FORM
     // ---------
