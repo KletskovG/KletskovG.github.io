@@ -1,19 +1,10 @@
 window.onload = function  () {
 
 
-
 let Slides    = document.querySelectorAll('.slider__slide');
 let counter   = 0;
 
-
-
-
-
-
-
 "use strict";
-
-
 // -------------
 // SCROLLS
 // -------------
@@ -30,7 +21,7 @@ Scroll.onclick = function  (e) {
 
 	function ScrollDown () {
 		if(scrolled < pos){
-			window.scrollTo(0,scrolled);;
+			window.scrollTo(0,scrolled);
 			scrolled += 40;
 			timer = setTimeout(ScrollDown, 20);
 		} else {
@@ -40,7 +31,7 @@ Scroll.onclick = function  (e) {
 	}
 
 	ScrollDown();	
-}
+};
 
 let WorksBtn = document.getElementById('OurWorks');
 
@@ -55,7 +46,7 @@ WorksBtn.onclick = function  () {
 
 	function ScrollDown () {
 		if(scrolled < pos){
-			window.scrollTo(0,scrolled);;
+			window.scrollTo(0,scrolled);
 			scrolled += 40;
 			timer = setTimeout(ScrollDown, 20);
 		} else {
@@ -65,7 +56,7 @@ WorksBtn.onclick = function  () {
 	}
 
 	ScrollDown();	
-}
+};
 
 // ------------
 // MODAL
@@ -80,7 +71,7 @@ HireBtn.onclick = function  () {
 	Modal.style.display = 'flex';
 	Modal.style.zIndex = '30';
 	ModalContainer.style.animationName = 'ModalOn';
-}
+};
 
 
 ModalClose.onclick = function  () {
@@ -93,7 +84,7 @@ ModalClose.onclick = function  () {
 	setTimeout(function  () {
 		ModalContainer.style.animationDuration = '0.3s';
 	},300);
-}	
+};
 
 
 Modal.onclick = function  (e) {
@@ -103,7 +94,7 @@ Modal.onclick = function  (e) {
 		this.style.display = 'none';
 		this.style.zIndex = '0'
 	}
-}
+};
 
 // ------------
 // SLIDER
@@ -119,7 +110,7 @@ Prev.onclick = function  () {
 	Slides[counter].style.animationName = 'SlidePrev';
 	setTimeout(function  () {
 		Slides[counter].style.display = 'none';
-	},501)
+	},501);
 
 	setTimeout(function  () {
 		counter--;
@@ -131,7 +122,7 @@ Prev.onclick = function  () {
 		Slides[counter].style.display = 'flex';
 		Slides[counter].style.animationName = 'SlideNext';
 	},502)
-}
+};
 
 
 Next.onclick = function  () {
@@ -139,7 +130,7 @@ Next.onclick = function  () {
 	Slides[counter].style.animationName = 'SlidePrev';
 	setTimeout(function  () {
 		Slides[counter].style.display = 'none';
-	},501)
+	},501);
 
 	setTimeout(function  () {
 		counter++;
@@ -151,7 +142,7 @@ Next.onclick = function  () {
 		Slides[counter].style.display = 'flex';
 		Slides[counter].style.animationName = 'SlideNext';
 	},502)
-}
+};
 // -----------
 // TEAM__SLIDER
 // ---------------
@@ -189,11 +180,12 @@ TeamSlider();
 // -----------
 // MENU
 // -----------
-let Home = document.querySelector('a[href="#header"]')
+let Home = document.querySelector('a[href="#header"]');
 let checkbox = document.querySelector('input[type="checkbox"]');
 let Service = document.querySelector('a[href="#services"]');
 let Works   = document.querySelector('a[href="#works"]');
 let Contact = document.querySelector('a[href="#contact"]');
+
 
 
 	Home.addEventListener('click', RemoveMenu);
@@ -246,58 +238,5 @@ let Top = document.getElementById('toTop');
 			Top.style.animationName = 'ToTopOff';
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+};
 		
