@@ -185,6 +185,12 @@ let checkbox = document.querySelector('input[type="checkbox"]');
 let Service = document.querySelector('a[href="#services"]');
 let Works   = document.querySelector('a[href="#works"]');
 let Contact = document.querySelector('a[href="#contact"]');
+let Menu = document.querySelector('.menu');
+
+Menu.style.visibility = 'hidden';
+setTimeout(() => {
+	Menu.style.visibility = 'visible';
+},400);
 
 
 
