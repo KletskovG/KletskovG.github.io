@@ -97,7 +97,7 @@ input.addEventListener('input', async ()=>{
 
     data.forEach(elem=>{
         const answer = document.createElement('div')
-        answer.innerHTML = `<h4>${elem.elem}</h4> <a href="${link(elem.j)} target="__blank">Ссылка</a>`
+        answer.innerHTML = `<h4> <a href="${link(elem.j)} target="__blank">${elem.elem}</a></h4 >`
         document.querySelector('.answer').appendChild(answer)
     })
 
