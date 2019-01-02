@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <script src="https://unpkg.com/vue"></script>
+
+  <style>
+    body{
+      background: gray;
+      font-size: 18px;
+      color:white
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <button class="btn" @click="getReq">Send request</button>
+
+    <div class="answer">{{answer}}</div>
+  </div>
+
+  <script>
+    const URL = ``
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        greeting: 'Welcome to your Vue.js app!',
+        docsURL: 'http://vuejs.org/guide/',
+        discordURL: 'https://chat.vuejs.org',
+        forumURL: 'http://forum.vuejs.org/',
+        answer : 'You didnt sent req yet!'
+      },
+      methods: {
+       getReq(){
+         fetch(`${URL}`)
+          .then((res)=>{
+            this.answer = `${res}`
+          })
+          .catch(err=>{
+            this.answer = err
+          })
+       }
+      }
+    })
+  </script>
+</body>
+</html>
