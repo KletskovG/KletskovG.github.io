@@ -20,7 +20,7 @@
   </div>
 
   <script>
-    const URL = ``
+    const URL = `https://mysterious-reaches-66345.herokuapp.com`
 
     var app = new Vue({
       el: '#app',
@@ -33,7 +33,7 @@
       },
       methods: {
        getReq(){
-         fetch(`${URL}`)
+         fetch(`${URL}/getReq`)
           .then((res)=>{
             this.answer = `${res}`
           })
