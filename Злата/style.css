@@ -1,0 +1,24 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background: url(./Другой\ цветастый\ фон.jpg);
+    text-align: center;
+}
+
+.first{
+    color: rgb(82, 15, 82);
+    font-weight: bold;
+}
+
+
+header a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+    
+
+    

@@ -1,0 +1,20 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    /* background: url(./фон\ пушины\ правельный.png); */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+img {
+    transition: all  0.2s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
