@@ -1,0 +1,88 @@
+:root{
+  /* First pallete */
+   -main-color: #1C5CBD;
+   -second-color:#444655;
+   -accent-color:#A8AABC;
+
+   /* Second Pallete */
+   /* TODO: Change var names if it will be preferred */
+  --main-color:#1C5CBD
+  --second-color:#9B4900;
+  --accent-color:#00788C;
+
+  /* Third pallete */
+  /*  TODO: Change var name if it will be preferred */
+  ---main-color:#1C5CBD;
+  ---second-color:#A8AABC;
+  ---accent-color:#B32847;
+  ---third-color:#BFA5A6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+/* COLOR PALETTE SECTION START */
+.color-palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.main-color {
+  background-color: #1C5CBD;
+}
+
+.second-color {
+  background-color: #9B4900;
+}
+
+.accent-color {
+  background-color: #00788C;
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+.second-secondary-color {
+  background-color: #444655;
+}
+
+.second-accent-color {
+  background-color: #00788C;
+}
+
+.third-secondary-color {
+  background-color: #A8AABC;
+}
+
+.third-accent-color {
+  background-color: #B32847;
+}
+
+.third-last-color {
+  background-color: #BFA5A6;
+}
+
+.color-block {
+  width: 18em;
+  height: 9em;
+  margin-right: 20px;
+}
+
+/* COLOR PALETTE SECTION END */
+
+/* HEADER START */
+
+
+
+/* HEADER END */
