@@ -1,3 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .questions {
   display: none;
+}
+
+.question-input {
+  padding: 20px;
 }
