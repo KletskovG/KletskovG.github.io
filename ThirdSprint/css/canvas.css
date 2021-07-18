@@ -1,0 +1,13 @@
+.orb-canvas {
+    position: absolute;
+    touch-action: none;
+    cursor: inherit;
+    height: 100%;
+    top: 0;
+    right: 0;
+    filter: blur(50px);
+}
+
+.hero-area-l1 {
+    overflow: hidden;
+}
